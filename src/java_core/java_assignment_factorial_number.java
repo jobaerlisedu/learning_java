@@ -12,7 +12,7 @@ public class java_assignment_factorial_number {
         int numberEnteredByUser = userInput.nextInt();
 
         int i, facRes = 1;
-        for (i = 1; i <= numberEnteredByUser; i++) {
+        for (i = numberEnteredByUser; i >= 1; i--) {
 
             facRes = facRes * i;
 
