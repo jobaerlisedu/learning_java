@@ -2,7 +2,7 @@ package java_core;
 
 import java.util.Scanner;
 
-public class java_for_loop {
+public class java_while_loop {
 
     public static void main(String[] args) {
 
@@ -14,11 +14,14 @@ public class java_for_loop {
         System.out.print("How many times you want to print your name? ");
         int loopTime = userInput.nextInt();
 
-        for (int i = 1; i <= loopTime; i++) {
+        int i = 1;
+        while (i <= loopTime) {
 
             System.out.println(userName);
+            i++;
 
         }
+
     }
 
 }
