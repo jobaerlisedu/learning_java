@@ -8,7 +8,7 @@ public class java_exercise_reverse_number {
 
         Scanner userInput = new Scanner(System.in);
 
-        int number, temp, r;
+        int number, temp, r, sum = 0;
 
         System.out.print("Enter a positive number : ");
         number = userInput.nextInt();
@@ -17,10 +17,12 @@ public class java_exercise_reverse_number {
         while (temp != 0) {
 
             r = temp % 10;
-            System.out.print(r);
+            sum = sum * 10 + r;
             temp = temp / 10;
 
         }
+
+        System.out.println("Reversed number : " + sum);
 
     }
 
