@@ -35,6 +35,14 @@ public class java_array_arraylist_operations {
         // get a value from arraylist by index number
         System.out.println("In 4th index, Value : " + numbers.get(4));
 
+        // add all the elements from one arraylist to another arraylist
+        ArrayList<Integer> numbers_two = new ArrayList<>();
+        numbers_two.addAll(numbers);
+        System.out.println("Another number arraylist : " + numbers_two);
+
+        // compare arraylists
+        System.out.println("Is numbers equal to number_two? " + numbers_two.equals(numbers));
+
         // remove 5th value from arraylist
         numbers.remove(5);
         System.out.println("After removing 5th value from the arraylist : " + numbers);
